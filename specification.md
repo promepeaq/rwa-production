@@ -7,7 +7,7 @@
 
 - **Power Generation Overview**：单位为  美元  的资产代币价格历史，每小时采集代币市价  并记录一次。可选时间单位分别为：24H、7D、30D、3M、6M、1Y、ALL和PRE。24H下显示  从当前小时往前推算24小时  的数据点、ALL下显示  资产代币发行以来  的完整价格变动、PRE显示  生成式AI通过历史价格生成的  未来1个月  价格曲线。所有超过六个月的历史数据  仅保留每一天第23小时的价格（收盘价）。
 - **Quick Trade**：Asset栏用输入框代替选择栏，Asset输入框仅能输入26个大写英文字母及小数点标志来指定交易资产代币、Amount输入框仅能输入1~0阿拉伯数字及小数点标志。点击Buy和Sell按钮后弹出框中按view full ticket跳转至股票交易页面。
-  
+
 - **Power Station Assets**：显示用户持有的资产代币。发电种类（Hydro或Solar）及发电量取自资产信息。显示价格为  用户持有的该资产代币量*当前的代币市价。此处的显示价格每1分钟采集一次，不记录进档案。百分比增加与减少为  当前显示价格  对比  用户每次购买代币时所支付价格的总合  的百分比。
 - **Recent Activity**：用户近期的交易历史，可以显示的交易分成七种：存入货币代币、取出货币代币、购买资产代币、售卖资产代币、获取分红、质押资产代币、解质资产代币。现阶段不实装质押资产代币和解质资产代币。
 
@@ -33,8 +33,16 @@
 - **Trading Volume**：与Power Generation Overview处理方式相似，采集项目为选中代币上一小时的交易总量。
 - **点进Power Station Trading Market中详细资产代币后**：Price Chart与Power Generation Overview为同一表格、Transaction History为用户购买该资产代币的历史记录、Order Book为全平台近期成交的买单与卖单。My Orders移出当前子页面，放到Trading主页面上。
 
+- **挂单完成、或查看历史交易记录的Order界面**：Order Lifecycle暂时不做、其他数据均取自链上端。
 
 ## 4. Governance页面
 - 现阶段不实装。
-  
+
+## 5. Assets页面
+- **Power Station Holdings**：点击资产代币跳转至该资产代币的Trading页面。
+- **Transaction History**：Dashboard页面中Recent Activity的完全版，点击相应记录跳转至购买、售卖、存入、取出或分红的详细记录页面。
+- **Featured Station**：由平台设置的推广栏，推广近期新上线的资产。点击Invest Now跳转至该资产的Project子页面。
+
+## 6. 右上角点击头像
+- **所有个人信息输入栏**：注意防止代码注入攻击。
 ---
